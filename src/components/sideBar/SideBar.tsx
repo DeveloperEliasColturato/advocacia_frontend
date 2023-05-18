@@ -1,5 +1,7 @@
 import { WrapperSideBar, WrapperSideBarButtons } from './styleSideBar';
 
+import { Link } from 'react-router-dom';
+
 export default function SideBar() {
   return (
     <WrapperSideBar>
@@ -7,18 +9,22 @@ export default function SideBar() {
       <WrapperSideBarButtons>
         <table>
           <tr>
-            <th>
-              <img src="./img/home.svg" alt="" />
-              <p>Início</p>
-            </th>
+            <Link to={'/'}>
+              <th>
+                <img src="./img/home.svg" alt="" />
+                <p>Início</p>
+              </th>
+            </Link>
             <th>
               <img src="./img/list.svg" alt="" />
               <p>Categorias</p>
             </th>
-            <th>
-              <img src="./img/create.svg" alt="" />
-              <p>Cadastrar Caso</p>
-            </th>
+            <Link to={'/newcase'}>
+              <th>
+                <img src="./img/create.svg" alt="" />
+                <p>Cadastrar Caso</p>
+              </th>
+            </Link>
             <th>
               <img src="./img/edit.svg" alt="" />
               <p>Atualizar caso</p>
