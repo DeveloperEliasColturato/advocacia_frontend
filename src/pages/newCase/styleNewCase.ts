@@ -3,16 +3,20 @@ import { colors } from '../../utils/colors';
 
 export const WrapperNewCase = styled.div`
   display: flex;
-  width: 100%;
-  height: 100%;
-  color: ${colors.gray900};
-  background-color: #eee;
+  flex-direction: row;
+  height: 100vh;
   form {
     padding: 2rem;
   }
 `;
 
 export const FormNewCase = styled.div`
+  background-color: #eee;
+  width: 73%;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  color: ${colors.gray900};
   tr {
     display: flex;
     column-gap: 1rem;
@@ -62,6 +66,30 @@ export const TypeDefinitivoForm = styled.div`
 `;
 
 export const InfoAutor = styled.div`
+  th {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+    background-color: ${colors.white};
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+  }
+`;
+
+export const InfoReu = styled.div`
+  th {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+    background-color: ${colors.white};
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+  }
+`;
+
+export const InfoAdiciona = styled.div`
   th {
     display: flex;
     flex-direction: row;

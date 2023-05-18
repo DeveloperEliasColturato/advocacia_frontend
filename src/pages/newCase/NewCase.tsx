@@ -7,6 +7,8 @@ import {
   TypeCase,
   TypeDefinitivoForm,
   InfoAutor,
+  InfoReu,
+  InfoAdiciona,
 } from './styleNewCase';
 
 export default function NewCase() {
@@ -102,8 +104,33 @@ export default function NewCase() {
                   <input type="checkbox" id="woman" />
                   <label htmlFor="woman">Feminino</label>
                 </th>
+                <th>
+                  <input type="number" placeholder="Quantidade de autores" />
+                </th>
               </tr>
             </InfoAutor>
+            <InfoReu>
+              <h3>Sobre o réu</h3>
+              <tr>
+                <th>
+                  <input type="number" placeholder="Quantidade de réus" />
+                </th>
+              </tr>
+            </InfoReu>
+            <InfoAdiciona>
+              <tr>
+                <th>
+                  <input type="checkbox" id="responsabilidade" />
+                  <label htmlFor="responsabilidade">
+                    Responsabilidade solidária
+                  </label>
+                </th>
+                <th>
+                  <input type="checkbox" id="tramitacao" />
+                  <label htmlFor="tramitacao">Tramitação prioritária</label>
+                </th>
+              </tr>
+            </InfoAdiciona>
           </table>
         </form>
       </FormNewCase>

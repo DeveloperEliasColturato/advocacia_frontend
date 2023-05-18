@@ -3,6 +3,10 @@ import { WrapperSideBar, WrapperSideBarButtons } from './styleSideBar';
 import { Link } from 'react-router-dom';
 
 export default function SideBar() {
+  function noLink() {
+    alert('Não é possível acessar a página no momento.');
+  }
+
   return (
     <WrapperSideBar>
       <img src="./img/Logo.png" alt="Logo" />
@@ -15,7 +19,7 @@ export default function SideBar() {
                 <p>Início</p>
               </th>
             </Link>
-            <th>
+            <th onClick={noLink}>
               <img src="./img/list.svg" alt="" />
               <p>Categorias</p>
             </th>
@@ -25,15 +29,15 @@ export default function SideBar() {
                 <p>Cadastrar Caso</p>
               </th>
             </Link>
-            <th>
+            <th onClick={noLink}>
               <img src="./img/edit.svg" alt="" />
               <p>Atualizar caso</p>
             </th>
-            <th>
+            <th onClick={noLink}>
               <img src="./img/file.svg" alt="" />
               <p>Novo documento</p>
             </th>
-            <th>
+            <th onClick={noLink}>
               <img src="./img/suport.svg" alt="" />
               <p>Suporte</p>
             </th>

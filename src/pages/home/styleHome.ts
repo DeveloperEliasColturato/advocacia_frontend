@@ -3,6 +3,8 @@ import { colors } from '../../utils/colors';
 
 export const WrapperHome = styled.div`
   display: flex;
+  height: 100vh;
+  background-color: #eee;
 `;
 
 export const Dashboard = styled.div`

@@ -4,18 +4,18 @@ import { colors } from '../../utils/colors';
 export const WrapperSideBar = styled.div`
   background-color: ${colors.primaryColor};
   width: 367px;
-  height: auto;
+  height: 100%;
   padding: 1rem 0;
   align-items: center;
   display: flex;
+  justify-content: center;
+  row-gap: 5rem;
   flex-direction: column;
 `;
 
 export const WrapperSideBarButtons = styled.div`
   row-gap: 1rem;
   color: ${colors.gray300};
-  position: fixed;
-  top: 30%;
   tr {
     display: flex;
     flex-direction: column;
