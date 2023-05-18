@@ -12,7 +12,7 @@ export const WrapperNewCase = styled.div`
 
 export const FormNewCase = styled.div`
   background-color: #eee;
-  width: 73%;
+  width: calc(100% - 367px);
   display: flex;
   overflow-y: scroll;
   flex-direction: column;
