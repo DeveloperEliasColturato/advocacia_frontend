@@ -39,6 +39,17 @@ export const FormNewCase = styled.div`
   input:focus {
     outline: none;
   }
+  .button-enabled {
+    border: none;
+    background-color: ${colors.primaryColor};
+    color: ${colors.secondaryColor};
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+  }
+  .button-disabled {
+    transition: all 0.3s;
+  }
 `;
 
 export const TypeCase = styled.div`
